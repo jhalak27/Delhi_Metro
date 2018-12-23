@@ -79,6 +79,7 @@ BEGIN
 END$$
 DELIMITER ;
 
+
 --trigger
 Passenger_AFTER_INSERT | INSERT | Passenger | BEGIN
 insert into Wallet(PassengerID) values (new.PassengerID);
